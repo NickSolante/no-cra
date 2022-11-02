@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # React app without CRA
+=======
+# Sample app without CRA
+>>>>>>> 41429d3 (fist commit)
 
 ### configured with
 
@@ -17,7 +21,13 @@
 
 ### TODO
 
+<<<<<<< HEAD
 - fix CI/CD pipeline
 - setup husky
 - setup docker for dev and prod
+=======
+- setup husky
+- setup docker for dev and prod
+- setup CI/CD
+>>>>>>> 41429d3 (fist commit)
 - setup faker

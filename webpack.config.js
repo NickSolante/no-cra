@@ -5,8 +5,7 @@ const { merge } = require('webpack-merge')
 
 const modeConfig = (env) => require(`./build-utils/webpack.${env}`)(env)
 
-module.exports = (env, argv) => {
-  const { mode } = argv
+module.exports = (env, { mode, configName }) => {
   return merge(
     {
       entry: './src/index.tsx',
