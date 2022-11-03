@@ -1,4 +1,4 @@
-# Sample app without CRA
+# React app without CRA
 
 ### configured with
 
@@ -17,7 +17,7 @@
 
 ### TODO
 
+- fix CI/CD pipeline
 - setup husky
 - setup docker for dev and prod
-- setup CI/CD
 - setup faker
