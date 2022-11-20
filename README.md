@@ -17,7 +17,7 @@
 
 ### TODO
 
-- fix CI/CD pipeline
+- fix CI/CD pipeline for actions
 - setup husky
 - setup docker for dev and prod
 - setup faker
