@@ -8,9 +8,6 @@
     "plugin:react/jsx-runtime",
     "plugin:prettier/recommended"
   ],
-<<<<<<< HEAD
-  "ignorePatterns": ["node_modules", "dist", "build", "coverage", "*.html", "webpack.*.js"],
-=======
   "ignorePatterns": [
     "node_modules",
     "dist",
@@ -20,7 +17,6 @@
     "webpack.*.js",
     "loadPresets.js"
   ],
->>>>>>> 41429d3 (fist commit)
   "rules": {
     "@typescript-eslint/no-non-null-assertion": "off",
     "no-inner-declarations": "off",
