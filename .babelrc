@@ -1,6 +1,5 @@
 {
   "presets": [
-    "@babel/preset-typescript",
     [
       "@babel/preset-env",
       { "useBuiltIns": "usage", "corejs": 3, "targets": { "node": "current" } }
@@ -9,11 +8,11 @@
       "@babel/preset-react",
       { "runtime": "automatic", "importSource": "@emotion/react" }
     ],
-    ["@babel/preset-typescript"]
+    "@babel/preset-typescript"
   ],
   "plugins": [
     "@babel/plugin-transform-runtime",
-    "@emotion",
-    "react-refresh/babel"
+    "@emotion"
+    // "react-refresh/babel"
   ]
 }
