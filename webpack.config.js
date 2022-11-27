@@ -5,8 +5,6 @@ const { merge } = require('webpack-merge')
 
 const modeConfig = (env) => require(`./build-utils/webpack.${env}`)(env)
 
-const isDevelopment = process.env.NODE_ENV !== 'production'
-
 module.exports = (env, { mode, configName }) => {
   return merge(
     {
@@ -30,13 +28,6 @@ module.exports = (env, { mode, configName }) => {
             exclude: /node_modules/,
             use: {
               loader: 'babel-loader',
-              options: {
-                // ... other options
-                // DO NOT apply the Babel plugin in production mode!
-                plugins: [
-                  isDevelopment && require.resolve('react-refresh/babel'),
-                ].filter(Boolean),
-              },
             },
           },
         ],

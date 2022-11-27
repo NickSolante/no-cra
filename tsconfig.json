@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "esnext",
     "lib": ["ESNext", "dom"],
     "jsx": "react-jsx",
     "noEmit": true,
@@ -13,13 +12,15 @@
 
     /* Module Resolution Options */
     "moduleResolution": "node",
+    "module": "esnext",
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "isolatedModules": true,
+    "checkJs": true,
+    "importHelpers": true,
     "baseUrl": "src"
   },
   "include": ["src"],
-
   "paths": {
     "test-utils": ["test-utils"]
   }
