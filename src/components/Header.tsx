@@ -1,10 +1,9 @@
 import styled from '@emotion/styled'
 
 export const HeaderStyles = styled('div')`
-  color: red;
-  background-color: blue;
+  color: white;
   font-size: 2rem;
-  padding: 0 1rem;
+  padding: 1rem;
   height: 4rem;
 `
 
@@ -17,6 +16,18 @@ const StyledUl = styled('ul')`
   gap: 2rem;
   margin: 0;
   padding: 0;
+  font-family: 'Oxygen mono', monospace;
+
+  li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  @font-face {
+    font-family: 'OxygenMono';
+    src: local('OxygenMono'),
+      url('../../public/assets/OxygenMono-Regular.ttf') format('truetype');
+  }
 `
 
 const headerItems = ['Nick Solante', 'LinkedIn', 'GitHub', 'Resume']
