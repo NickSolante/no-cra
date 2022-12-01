@@ -1,10 +1,22 @@
 import styled from '@emotion/styled'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export const HeaderStyles = styled('div')`
   color: white;
   font-size: 2rem;
   padding: 1rem;
-  height: 4rem;
+  height: 9rem;
+
+  /* Light mode */
+  @media (prefers-color-scheme: light) {
+    color: black;
+  }
+
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
 `
 
 const StyledUl = styled('ul')`
@@ -23,6 +35,15 @@ const StyledUl = styled('ul')`
     text-align: center;
   }
 
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+  li a:hover {
+    text-decoration: none;
+    color: white;
+  }
+
   @font-face {
     font-family: 'OxygenMono';
     src: local('OxygenMono'),
@@ -30,15 +51,21 @@ const StyledUl = styled('ul')`
   }
 `
 
-const headerItems = ['Nick Solante', 'LinkedIn', 'GitHub', 'Resume']
-
 export const Header = () => {
   return (
     <HeaderStyles>
       <StyledUl>
-        {headerItems.map((item, index) => {
-          return <li key={index}>{item}</li>
-        })}
+        <li>Nick Solante</li>
+        <li>
+          <a href="https://www.linkedin.com/in/nsolante/">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/NickSolante">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </li>
       </StyledUl>
     </HeaderStyles>
   )
