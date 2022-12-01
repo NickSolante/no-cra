@@ -8,6 +8,10 @@ module.exports = () => ({
         use: ['style-loader', 'css-loader'],
       },
       {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'assets/resource',
+      },
+      {
         test: /\.(js|ts)x?$/,
         exclude: /node_modules/,
         use: {
@@ -20,5 +24,6 @@ module.exports = () => ({
       },
     ],
   },
+  devtool: 'inline-source-map',
   plugins: [new ReactRefreshWebpackPlugin()].filter(Boolean),
 })

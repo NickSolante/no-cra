@@ -18,7 +18,6 @@ module.exports = (env, { mode, configName }) => {
           template: './public/index.html',
         }),
         new webpack.ProgressPlugin(),
-
         new webpack.HotModuleReplacementPlugin(),
       ],
       module: {
