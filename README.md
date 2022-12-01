@@ -21,6 +21,5 @@
   - prettier check
   - eslint check
   - jest tests
-- setup husky
-- setup docker for dev and prod
+- setup docker for dev and prod builds
 - setup faker
