@@ -1,5 +1,4 @@
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
-
 module.exports = () => ({
   module: {
     rules: [
@@ -9,17 +8,20 @@ module.exports = () => ({
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'assets/resource',
+        type: 'assets',
       },
       {
         test: /\.(js|ts)x?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
+          options: {
+            plugins: ['react-refresh/babel'],
+          },
         },
       },
     ],
   },
+  plugins: [new ReactRefreshWebpackPlugin()],
   devtool: 'inline-source-map',
-  plugins: [new ReactRefreshWebpackPlugin()].filter(Boolean),
 })

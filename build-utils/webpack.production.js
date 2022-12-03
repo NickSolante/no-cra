@@ -15,6 +15,13 @@ module.exports = () => ({
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'style-loader', 'css-loader'],
       },
+      {
+        test: /\.(js|ts)x?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
     ],
   },
   plugins: [new MiniCssExtractPlugin()],

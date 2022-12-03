@@ -30,7 +30,7 @@ const StyledUl = styled('ul')`
   padding: 0;
   font-family: 'Oxygen mono', monospace;
 
-  li:first-child {
+  li:first-of-type {
     flex-basis: 100%;
     text-align: center;
   }

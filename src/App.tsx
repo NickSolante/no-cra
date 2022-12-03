@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { Counter, Header } from './components'
+import { Header } from './components'
 
 const AppStyles = styled('div')`
   padding: 0;
