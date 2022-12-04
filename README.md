@@ -20,6 +20,5 @@
 - fix CI/CD pipeline for actions
   - prettier check
   - eslint check
-  - jest tests
 - setup docker for dev and prod builds
 - setup faker
